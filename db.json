@@ -1,0 +1,9 @@
+{
+    "users":[
+        {"id": 1, "name":"Billy Tom", "email":"big@jim.com" },
+        {"id": 2, "name":"Billy Tomas", "email":"bigger@jim.com" }
+    ],
+    "comments":[{"id":1, "comments":"user"}
+
+    ]
+}

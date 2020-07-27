@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+                <div class="row">
+            <div class="col-xl-12">
+               
+                <h1>Customers</h1>
+                <table id="userTable" class="table table-striped">
+                    <thead>
+                        <th>User</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                    </thead>
+                    <tbody>
+                        <tr id="1">
+                            <td>James Bloom</td>
+                            <td>james.bloom@t.hu</td>
+                            <td>2000 Szentendre</td>
+                            <td><button class="btn btn-group btn-info " onclick="modify(1)">Modify</button><button class="btn btn-group btn-danger " onclick="deleteRow(1)">Delete</button></td>
+                            
+                        </tr>
+                        <tr id="2">
+                            <td>Tom Jones</td>
+                            <td>tom.j@tot.hu</td>
+                            <td>1111 Budapest</td>
+                            <td><button class="btn btn-group btn-info " onclick="modify(2)">Modify</button><button class="btn btn-group btn-danger " onclick="deleteRow(2)">Delete</button></td>
+                        </tr>
+                        <tr id="3" >
+                            <td>Kate Forest</td>
+                            <td>katee@open.com</td>
+                            <td>2000 Szentendre</td>
+                            <td><button class="btn btn-group btn-info " onclick="modify(3)">Modify</button><button class="btn btn-group btn-danger " onclick="deleteRow(3)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+
+</html>

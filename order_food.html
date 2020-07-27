@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>                                                 
+        <div class="container">
+            <nav class="navbar navbar-light bg-light">
+                <div class="btn-group">
+
+                    <a href="./index.html" class="btn btn-warning">Main page</a>
+                    <a href="./address.html" class="btn btn-warning">Contact</a>
+                    <a href="./menu.html" class="btn btn-warning">Menu</a>
+                    <a href="./order_food.html" class="btn btn-warning">Order form</a>
+                </div>
+            </nav>
+        </div>
+    </header> 
+    <div class="container">
+    <h1>Order</h1>
+    <div class="col-6 col-md-4 offset-1 offset-md-4">
+        
+        <form class="form-group" id="order">
+            <fieldset>
+                <div>
+                    <label for="name">Name: *</label>
+                    <input id="name" name="name" class="form-control" placeholder="Name" type="text" required>
+                </div>
+                <div>
+                    <label for="email">Email address: *</label>
+                    <input id="email" name="email" class="form-control" placeholder="Enter email">
+                </div>
+                <div>
+                    <label for="address">Address: *</label>
+                    <input id="address" name="address" class="form-control" placeholder="Address" type="text">
+                </div>
+                <div>
+                    <label for="comment">Comment </label>
+                    <textarea id="comment" name="comment" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <h3>Extras</h3>
+            <fieldset>
+
+                <div>
+                    <label for="nothing">No, thanks.</label>
+                    <input checked id="nothing" name="extra" type="radio" value="0">
+                </div>
+                <div>
+                    <label for="cheese">Cheese</label>
+                    <input id="cheese" name="extra" type="radio" value="300">
+                </div>
+                <div>
+                    <label for="double-cheese">Double cheese</label>
+                    <input id="double-cheese" name="extra" type="radio" value="600">
+                </div>
+                <div>
+                    <label for="double-meet">Double meet</label>
+                    <input id="double-meet" name="extra" type="radio" value="1000">
+                </div>
+                <div>
+                    <label for="double-double">Double-double</label>
+                    <input id="double-meet" name="extra" type="radio" value="1000">
+                </div>
+
+                <div>
+                    <label for="sauce">Sauce: </label>
+                    <select id="sauce" name="sauce">
+                        <option value=0 selected>No sauce</option>
+                        <option value=100>Spicy</option>
+                        <option value=100>White</option>
+                    </select>
+                </div>
+            </fieldset>
+            <div>
+                <label for="amount">Quantity: *</label>
+                <input id="amount" name="amount" type="number" class="form-control" required>
+            </div>
+            <button class="btn btn-success mb-3" onclick="calculatePrice_cond();validate()">Submit</button>
+            <p class="message">Price is <strong>0</strong> Ft.</p>
+        </form>
+    </div>
+</div>
+    <script src="calculate.js"></script>
+    
+</body>
+
+</html>

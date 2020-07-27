@@ -1,0 +1,81 @@
+body {
+  background-color: rgba(255,208,0,0.30);
+}
+
+.container{
+  background-color: white;
+  }
+
+.btn-warning{
+  color: maroon;
+  border-right-width: 2em;
+  border-left-width: 2em;
+  }
+
+
+.type{
+  text-align: center;
+  color: #28A745;
+}
+
+h1 {
+  text-align: center;
+  color: #28A745;
+  padding-top: 40px;
+}
+
+
+#order {
+  color: maroon;
+  text-align: justify;
+}
+
+label {
+  display: inline-block;
+}
+
+.price{
+  text-align: center;
+}
+
+.temp{
+  text-align: right;
+}
+
+.widget{
+  background-color:maroon;
+  color:rgb(255,208,0);
+}
+
+
+.navbar{
+  background-color: maroon;
+}
+
+.day{
+  padding-left: 1em;
+}
+
+.average{
+  text-align: left;
+  
+}
+
+.maximum{
+  text-align: center;
+  
+}
+
+.minimum{
+  text-align: right;
+  
+}
+
+.weather_stat{
+ 
+  padding: 1em;
+}
+
+.invisible {
+  visibility: hidden;
+}

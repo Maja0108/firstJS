@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload=" averageTemp();minTemp();maxTemp()">
+   
+    <header>
+        <div class="container">
+            <form class=widget id=widget onsubmit="return false">
+                <div class="temp">
+                    <strong></strong> &degC
+
+                </div>
+                <div class="day">
+                    <div class="row weather">
+                        <div class="col-md-2">
+                            <select class="form-control form-control-sm day" id="day" name="day"
+                                onclick="weatherWidget()">
+                                <option value=0>Monday</option>
+                                <option value=1>Tuesday</option>
+                                <option value=2>Wednesday</option>
+                                <option value=3>Thursday</option>
+                                <option value=4>Friday</option>
+                                <option value=5>Saturday</option>
+                                <option value=6>Sunday</option>
+                            </select>
+
+                        </div>
+
+                        <button class="btn btn-warning" onclick="dailyProduct()">Show me</button>
+
+                        <div class="col-md-8">
+                            <div class="daily"></div>
+                        </div>
+                    </div>
+                    <div class="row weather_stat">
+                        <div class="col average">Average  <strong></strong>&degC</div>
+                        <div class="col maximum">Maximum <strong></strong>&degC</div>
+                        <div class="col minimum">Minimum <strong></strong>&degC</div>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <nav class="navbar">
+
+
+                <a href="./index.html" class="btn btn-warning">Main page</a>
+                <a href="./address.html" class="btn btn-warning">Contact</a>
+                <a href="./menu.html" class="btn btn-warning">Menu</a>
+                <a href="./order_food.html" class="btn btn-warning">Order form</a>
+
+            </nav>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class='row'>
+            <div class="col-sm-3">
+                <table class="table table-striped">
+                    <thead>
+                        <th>Opening hours</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday-Thursday</td>
+                            <td>09</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Friday-Saturday</td>
+                            <td>12</td>
+                            <td>24</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10</td>
+                            <td>15</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class='row'>
+            <div class="col">
+                <h1>Address</h1>
+                <p>1122 Budapest, Alma utca 1</p>
+                <img src="https://www.google.com/maps/vt/data=ao81d3oeiOA8kPBmaVPrL8SRp70yVf_rbh75vaJKQArmDNk3mn259UjAaFOBQHF8Uh3Ol91gVkNecHLQo62vlwjqvr-5QgnsX_eZGJB-4SwNNCGZGkJQ8VjdlkcosGrNfA2gVn6MFrHEaStDdJazVyDEB45tgEqfDPNLMdrtZ8MXg-9nO8djbje1ahBQkFDHfAaOflgtiE6uaZDYRv_hSyz75PdLIe7zOcKHnLh2NneENc3mf1Hy2fqH-HGxP8QZWA"
+                    ,class="rounded center" , alt="location on map" />
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="weather_widget.js"></script>
+</body>
+
+</html>
